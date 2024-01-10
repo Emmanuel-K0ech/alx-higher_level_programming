@@ -8,6 +8,6 @@ class Square:
         """ initialization method
 
             Args:
-                _size: dimension of the square
+                size: dimension of the square
         """
-        self._size = size
+        self.__size = size
