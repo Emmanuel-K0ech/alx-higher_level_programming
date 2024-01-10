@@ -1,11 +1,7 @@
 #!/usr/bin/python3
+"""
+Function that reads a text file and prints to stdout
+"""
 def read_file(filename=""):
-    """
-    Function read file
-    filename:
-        file to be read
-    Returns:
-        void
-    """
     with open(filename) as f:
         print(f.read(), end="")
