@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" This is a module to a class(square)
+""" 
+    This is a module to a class(square)
     the class has the following methods
     variables: size, position
     methods: area, print, position, size (setter and getter)
