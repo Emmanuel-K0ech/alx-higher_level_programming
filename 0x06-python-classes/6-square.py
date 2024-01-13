@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" 
-    This is a module to a class(square)
+""" This is a module to a class(square)
     the class has the following methods
     variables: size, position
     methods: area, print, position, size (setter and getter)
@@ -26,7 +25,14 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """ Setter func: sets the value of __size """
+        """ Setter func: sets the value of __size
+
+            Args:
+                value: size input
+
+            Check instance of value to validate input
+            Assign value to size if all criterias are met
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -40,7 +46,14 @@ class Square:
 
     @position.setter
     def position(self, pos):
-        """Validating the values in the tuple"""
+        """Validating the values in the tuple
+
+            Args:
+                pos: positonal tuple input
+
+            Validate input of the pos tuple
+            Assign pos to position
+        """
         for x in pos:
             if not (x >= 0 and isinstance(x, int)):
                 raise TypeError("position must be a tuple
@@ -53,7 +66,10 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
-        """ Prints square using '#' """
+        """ Prints square using '#'
+            The position(x, y) determine the underscores vertically
+            and horizintally on the ## squares
+        """
         for x in range(self.__position[1]):
             print()
         if self.__size == 0:
