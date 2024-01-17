@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+    The script adds all arguments to a python list by:
+        copying the arguments from Args to a list[]
+        get JSON representation using save_to_json_file()
+        create obj using load_from_json_file()
+"""
 import sys
 import importlib
 
