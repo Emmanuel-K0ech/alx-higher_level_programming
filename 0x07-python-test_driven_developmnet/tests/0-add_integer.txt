@@ -1,0 +1,29 @@
+# import add_integer() function to be tested
+
+>>> from add_integer import add_integer
+
+# The code to test
+
+>>> add_integer(1, 2)
+3
+
+>>> add_integer(100, -2)
+98
+
+>>> add_integer(2)
+100
+
+>>> add_integer(100.3, -2)
+98
+
+>>> add_integer(-2, 3)
+1
+
+>>> add_integer(4, "School")
+TypeError: b must be an integer
+
+>>> add_integer("ss", 4)
+TypeError: a must be an integer
+
+>>> add_integer()
+TypeError: a must be an integer
