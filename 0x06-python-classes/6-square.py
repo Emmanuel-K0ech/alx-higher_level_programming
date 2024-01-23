@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-""" This is a module to class Square """
+""" This is a module to class Square
+    Contains almost all the aspects of a class
+    i.e properties, __init__, getters, setters
+    Square class can do the area of square
+    Can also get a position of a square
+"""
 
 
 class Square:
