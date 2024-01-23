@@ -1,0 +1,50 @@
+=================================================
+How to Use add_integer in module: 0-add_integer.py
+==================================================
+
+This module defines an integer addition function ``add_integer(a, b=98``
+
+Usage
+=====
+
+``add_integer(...)``` returns the addition of its two arguments
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+This is a simple demonstration of how it works with 2 integers
+	
+	>>> add_integer(1, 2)
+	3
+
+It also does the sum of negative numbers
+
+	>>> add_integer(100, -2)
+	98
+
+The second parameter has a constant value of ``b=98`` as shown in the prototype
+So if we pass one integer to the function the sum will still be computed
+	
+	>>> add_integer(2)
+	100
+
+Floats and casted to integers before addition is performed so the output are integers all through
+
+	>>> add_integer(100.3, -2.3)
+	98
+
+Floating and non_floating values can be combined, but the output will be a non_float integer
+
+	>>> add_integer(-2, 3)
+	1
+
+``add_integer()`` expects that both arguments are either integers of floats
+If either argument is a non integer and non-float, a TypeError is raised
+
+	>>> add_integer(4, "School")
+	TypeError: b must be an integer
+
+	>>> add_integer("School", 4)
+	TypeError: a must be an integer
+
+	>>> add_integer(None)
+	TypeError: a must be an integer
