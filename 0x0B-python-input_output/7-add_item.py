@@ -13,7 +13,6 @@ module_name1 = "5-save_to_json_file"
 module_name2 = "6-load_from_json_file"
 save_module = importlib.import_module(module_name1)
 load_module = importlib.import_module(module_name2)
-new_args = []
 new_args = sys.argv[1:]
 json_filename = "add_item.json"
 with open(json_filename, 'w') as f:
