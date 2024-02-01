@@ -16,6 +16,6 @@ load_module = importlib.import_module(module_name2)
 new_args = []
 new_args = sys.argv[1:]
 json_filename = "add_item.json"
-with open(json_filename, 'a') as f:
+with open(json_filename, 'w') as f:
     save_module.save_to_json_file(new_args, json_filename)
     my_obj = load_module.load_from_json_file(json_filename)
