@@ -10,7 +10,7 @@ class MagicClass:
         """ Another docstring """
         self.__radii = 0
         if type(radii) is not int and type(radii) is not float:
-            raise TypeError('radii must be a number')
+            raise TypeError('radius must be a number')
         self.__radii = radii
 
     def area(self):
