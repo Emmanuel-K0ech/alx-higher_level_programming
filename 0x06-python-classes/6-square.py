@@ -55,10 +55,11 @@ class Square:
             Validate input of the pos tuple
             Assign pos to position
         """
-        if (not isinstance(pos, tuple) or
-            len(pos) != 2 or
-            not all(isinstance(num, int) for num in pos) or
-            not all(num >= 0 for num in pos)):
+        if not isinstance(pos, tuple):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if len(pos) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if len([i for i in pos if isinstance(i, int) and i >= 0]) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = pos
 
