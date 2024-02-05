@@ -56,10 +56,10 @@ class Square:
             Assign pos to position
         """
         if (
-                isinstance(pos, tuple)
-                and len(pos) == 2
-                and isinstance(pos[0], int)
-                and isinstance(pos[1], int)
+                not isinstance(pos, tuple)
+                or len(pos) != 2
+                or not isinstance(pos[0], int)
+                or not isinstance(pos[1], int)
                 and pos[0] >= 0
                 and pos[1] >= 0
                 ):
