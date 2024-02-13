@@ -55,17 +55,14 @@ class Square:
             Validate input of the pos tuple
             Assign pos to position
         """
-        if (
-                isinstance(pos, tuple)
-                and len(pos) == 2
-                and isinstance(pos[0], int)
-                and isinstance(pos[1], int)
-                and pos[0] >= 0
-                and pos[1] >= 0
-                ):
-            self.__position = pos
-        else:
-            raise TypeError("position must be a tuple of 2 positive integers")
+        if (not isinstance(pos, tuple)
+            or len(value != 2
+            or not all(isinstance(num, int) for num in pos)
+            or not all(num >= 0 for num in value)
+        ):
+            raise TypeError
+            ("position must be a tuple of 2 positive integers")
+        self.__position = pos
 
     def area(self):
         """ Computes the Area of the square """
