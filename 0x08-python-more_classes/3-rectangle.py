@@ -55,5 +55,7 @@ class Rectangle:
 
     def __str__(self):
         """ string representation of an object """
+        representation = ""
         for x in range(self.__height):
-            print(self.__width * "#")         
+            representation += "#" * self.__width + "\n"
+        return representation.strip()
