@@ -10,12 +10,12 @@ class Rectangle:
         number_of_instances(class attribute)
     """
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         self.__height = height
         self.__width = width
         Rectangle.number_of_instances += 1
-        self.print_symbol = "#"
 
     @property
     def width(self):
@@ -61,8 +61,6 @@ class Rectangle:
     def __str__(self):
         """ string representation of an object """
         representation = ""
-        if self.print_symbol is None:
-            return representation
         if self.__width == 0 or self.__height == 0:
             return representation
         for x in range(self.__height):
