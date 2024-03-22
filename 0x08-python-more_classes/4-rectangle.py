@@ -58,7 +58,6 @@ class Rectangle:
         representation = ""
         for x in range(self.__height):
             representation += "#" * self.__width + "\n"
-        """strip() removes any trailing newline characters"""
         return representation.strip()
 
     def __repr__(self):
