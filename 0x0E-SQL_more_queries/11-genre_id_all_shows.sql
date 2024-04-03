@@ -1,4 +1,4 @@
---lists shows contained in the database hbtn_0d_tvshows
+-- lists shows contained in the database hbtn_0d_tvshows
 -- Each record display: tv_shows.title - tv_show_genres.genre_id
 -- Only use one SELECT statement
 
