@@ -1,10 +1,10 @@
 #!/usr/bin/node
-"use strict";
+'use strict';
 
-let myArgs = ["C is fun", "Python is cool", "JavaScript is amazing"];
+const myArgs = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 let i = 0;
 
 while (i < myArgs.length) {
-    console.log(myArgs[i]);
-    i++;
+  console.log(myArgs[i]);
+  i++;
 }

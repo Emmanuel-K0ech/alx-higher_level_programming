@@ -1,12 +1,12 @@
 #!/usr/bin/node
-"use strict";
+'use strict';
 
-let myArg = process.argv;
-let num1 = parseInt(myArg[2]);
-let num2 = parseInt(myArg[3]);
+const myArg = process.argv;
+const num1 = parseInt(myArg[2]);
+const num2 = parseInt(myArg[3]);
 
-function add(a, b) {
-    let result = a + b;
-    console.log(result);
-};
+function add (a, b) {
+  const result = a + b;
+  console.log(result);
+}
 add(num1, num2);
