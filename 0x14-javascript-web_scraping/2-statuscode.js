@@ -4,7 +4,7 @@ const myRequest = new Request(process.argv[2]);
 
 fetch(myRequest)
   .then((response) => {
-    console.log('code: ', response.status);
+    console.log(`code: ${response.status}`);
   })
   .catch((error) => {
     console.error('Error', error);
