@@ -1,11 +1,6 @@
 #!/usr/bin/node
 // Displays the status code of a GET request : code: <status code>
-const myRequest = new Request(process.argv[2]);
-
-fetch(myRequest)
-  .then((response) => {
-    console.log(`code: ${response.status}`);
-  })
-  .catch((error) => {
-    console.error('Error', error);
-  });
+const request = require('request');
+request.get(process.argv[2]).on('response', (response) => {
+  console.log(`code: ${response.statusCode}`);
+});
